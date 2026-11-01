@@ -60,7 +60,7 @@ Under the hood:
 ```bash
 # 1. Clone the repository
 git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+cd https://github.com/OmarAhmedTHE25th/SPE_project.git
 
 # 2. Compile using C++17
 g++ -std=c++17 main.cpp -o profiler_app
@@ -73,45 +73,3 @@ g++ -std=c++17 main.cpp -o profiler_app
 1. Open the project folder in CLion (or your preferred IDE).
 2. Reload CMake project if prompted.
 3. Build and Run the `SPE_project` target.
-
----
-
-## 📊 Sample Execution & Outputs
-
-### Console Output
-```text
-Parsing input...
-  Executing step A...
-  Executing step B...
-Computing results...
-  Executing step B...
-
-Process finished with exit code 0
-```
-
-### 1. `event_log.txt`
-```text
-ENTER: main (called by [ROOT])
-ENTER: parse_input (called by main)
-ENTER: step_a (called by parse_input)
-ENTER: step_b (called by step_a)
-EXIT:  step_b
-EXIT:  step_a
-EXIT:  parse_input
-ENTER: compute_results (called by main)
-ENTER: step_b (called by compute_results)
-EXIT:  step_b
-EXIT:  compute_results
-EXIT:  main
-```
-
-### 2. `path_profile.txt`
-```text
-=== PATH PROFILE (Caller -> Callee Frequencies) ===
-
-compute_results -> step_b : 1 call(s)
-main -> compute_results : 1 call(s)
-main -> parse_input : 1 call(s)
-parse_input -> step_a : 1 call(s)
-step_a -> step_b : 1 call(s)
-```
