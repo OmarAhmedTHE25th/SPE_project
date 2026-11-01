@@ -1,0 +1,12 @@
+ENTER: main (called by [ROOT])
+ENTER: parse_input (called by main)
+ENTER: step_a (called by parse_input)
+ENTER: step_b (called by step_a)
+EXIT:  step_b
+EXIT:  step_a
+EXIT:  parse_input
+ENTER: compute_results (called by main)
+ENTER: step_b (called by compute_results)
+EXIT:  step_b
+EXIT:  compute_results
+EXIT:  main

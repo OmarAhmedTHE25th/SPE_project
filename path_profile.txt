@@ -1,0 +1,7 @@
+=== PATH PROFILE (Caller -> Callee Frequencies) ===
+
+compute_results -> step_b : 1 call(s)
+main -> compute_results : 1 call(s)
+main -> parse_input : 1 call(s)
+parse_input -> step_a : 1 call(s)
+step_a -> step_b : 1 call(s)
